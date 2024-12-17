@@ -37,12 +37,8 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .cont--visualizador .informe{
   max-width: 700px;
-  /* padding: 25px; */
-  font-weight: 300;
-
-  h4{
-    padding: 0 25px;
-  }
+  
+ 
   
 }
 .cont--visualizador .informe  img{
@@ -73,14 +69,14 @@ height: 100%;
     
     position: relative;
     padding: 10px 0;
-    h2{
+    /* h2{
       font-weight: 400; 
-      /* font-size: 16px; */
+      
     }
     h3{
       font-weight: 300;
-      /* font-size: 13px; */
-    }
+      
+    } */
     
  }
 .scene {
