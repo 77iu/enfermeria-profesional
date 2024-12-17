@@ -9,8 +9,14 @@
     transition: 0.5s ease;
     letter-spacing: 1px;
 }
-h2{
+h2, h3{
   padding: 0 25px;
+  font-weight: 400;
+}
+p{
+  
+  line-height: 150%;
+  letter-spacing: 2px;
 }
 
 :root {
@@ -60,11 +66,7 @@ animation: body__ 0.4s 0.3s linear forwards;
     opacity: 0;
   }
 }
-p{
-  
-  line-height: 150%;
-  letter-spacing: 2px;
-}
+
 
 header{
    position: absolute;
