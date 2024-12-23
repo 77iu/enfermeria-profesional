@@ -3,6 +3,7 @@
    width: 100%;
    flex-wrap: wrap;
   margin: 50px 0;
+  padding: 25px;
 }
 
 .notas--interes a{
@@ -213,7 +214,6 @@ background: linear-gradient(to left, transparent, white, transparent);
  .cont--visualizador a:hover{
   font-weight: 600;
  }
-
  /* ==================================== */
  .itemizado{
 width: 100%;
@@ -237,5 +237,69 @@ padding: 30px;
  .ver--mas:hover{
   background-color: azure;
  }
+/* =estilos==servicios */
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.services-section .card{
+  padding-top: 20px;
+}
 
+
+/* Estilo para cada tarjeta */
+.card{
+
+  display: flex;
+  flex-wrap: wrap; /* Asegura que se ajuste en pantallas más pequeñas */
+  width: 100%;
+  border: 1px solid #ddd;
+  /* border-radius: 8px; */
+  overflow: hidden;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Mitad de la tarjeta con la imagen */
+.card img {
+  width: 50%; /* Ocupa la mitad del ancho */
+ aspect-ratio: 1/0.8;
+  object-fit: cover; /* Asegura que la imagen se recorte bien */
+}
+
+/* Mitad de la tarjeta con el contenido */
+.card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 50%; /* Ocupa la otra mitad */
+  background-color: #fff;
+}
+
+
+/* Título y párrafo dentro del contenido */
+.card-content h2 {
+  margin: 0 0 10px;
+  /* font-size: 20px; */
+  color: #333;
+}
+
+.card-content p {
+  margin: 0;
+  /* font-size: 16px; */
+  color: #555;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Cambia a formato vertical */
+  }
+
+  .card img, .card-content {
+    width: 100%; /* Ocupan todo el ancho */
+  }
+}
 
