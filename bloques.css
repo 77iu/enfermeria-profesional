@@ -3,13 +3,12 @@
 }
  .bloques{
     /* background-color: red; */
-    width: 100%;
+ 
     height: auto;
     display: flex;
     
     justify-content: center;
-    position: absolute;
-    bottom: 2%;
+   
 }
 .bloques .bloque--uno
 {
