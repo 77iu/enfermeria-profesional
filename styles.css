@@ -9,14 +9,19 @@
     transition: 0.5s ease;
     letter-spacing: 1px;
 }
+h1{
+  font-weight: 600;
+ 
+}
 h2, h3{
-  padding: 0 25px;
+  /* padding: 0 25px; */
   font-weight: 400;
 }
 p{
-  
+
   line-height: 150%;
   letter-spacing: 2px;
+  padding: 2px;
 }
 
 
@@ -41,6 +46,11 @@ p{
 }
 .blue{
   color: rgb(7, 74, 167);
+  text-align: center;
+}
+.black{
+  
+  padding: 50px 25px;
 }
 
 body{
@@ -48,6 +58,7 @@ body{
     max-width: 1920px;
     margin: auto;
  position: relative;
+
 }
 body:after{
   content: "";
@@ -73,12 +84,19 @@ header{
    position: absolute;
    top: 0;
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px; 
    z-index: 5;
+   
+   
+}
+.header-service{
+  background-color: rgba(0, 128, 0, 0.435);
+  position: relative;
+ 
 }
 
 .logo span{
@@ -91,9 +109,13 @@ background-color: #ffffff;
   font-weight: 600;
 }
 @media only screen and (max-width: 400px){
+  
     .logo span{
         font-size: 25px;
     }
+}
+h1{
+  font-size: 25px;
 }
 .info-cards p{
   max-width: 450px;
