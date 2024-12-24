@@ -26,9 +26,10 @@ p{
 
 
 :root {
-  --cuadricula: repeating-linear-gradient(-60deg,transparent,transparent 48px,#ffffff 50px, #ffffff 52px),
-  repeating-linear-gradient(60deg,rgba(0, 128, 0, 0.1),rgba(0, 128, 0, 0) 48px, #ffffff 50px,#ffffff 52px);
-
+  --cuadricula: repeating-linear-gradient(to bottom,transparent 0%,transparent 1%,
+  rgba(0, 128, 0, 0.435) 1%, rgba(0, 128, 0, 0.435) 2%,transparent 2%,transparent 98%, rgba(0, 128, 0, 0.435) 98%, rgba(0, 128, 0, 0.435) 99%,transparent 99% , transparent 100%),
+  repeating-linear-gradient(to left,transparent 0%,transparent 1%,
+  rgba(0, 128, 0, 0.435) 1%, rgba(0, 128, 0, 0.435) 2%,transparent 2%,transparent 98%, rgba(0, 128, 0, 0.435) 98%, rgba(0, 128, 0, 0.435) 99%,transparent 99% , transparent 100%);
   --gradient01: linear-gradient(to top,rgba(0, 128, 0, 0.435),white,rgba(0, 128, 0, 0.435));
   
 }
