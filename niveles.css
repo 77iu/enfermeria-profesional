@@ -138,9 +138,13 @@ height: 100%;
     backface-visibility: hidden;
     overflow: hidden;
     padding: 10px;
-    background-color: rgba(0, 128, 0, 0.216);
-    background: var(--cuadricula);
- 
+    /* background-color: rgba(0, 128, 0, 0.216); */
+    /* background: var(--cuadricula); */
+  background: repeating-linear-gradient(to bottom,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 5%,
+  black 5%, black 7%,rgb(255, 255, 255) 7%,rgb(255, 255, 255) 93%, black 93%, black 95%,rgb(255, 255, 255) 95% , rgb(255, 255, 255) 100%),
+  repeating-linear-gradient(to left,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 5%,
+  black 5%, black 7%,rgb(255, 255, 255) 7%,rgb(255, 255, 255) 93%, black 93%, black 95%,rgb(255, 255, 255) 95% , rgb(255, 255, 255) 100%);
+  
    
  }
 
