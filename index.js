@@ -83,3 +83,26 @@ box.addEventListener('touchend', () => {
   box.style.transform = `translateZ(-400px) rotateY(${rotationAngle}deg)`;
 });
 
+
+
+// Selecciona todos los elementos con la clase 'observer'
+const observers = document.querySelectorAll('.observer');
+
+// Función para comprobar si un elemento está en el viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+// Función para agregar la clase 'active' cuando el elemento es visible
+function checkVisibility() {
+  observers.forEach((observer) => {
+    if (isInViewport(observer)) {
+      observer.classList.add('active');
+    }
+  });
+}
+
+// Escucha los eventos de scroll y carga de la página
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
