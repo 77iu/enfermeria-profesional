@@ -49,9 +49,8 @@ font-weight: 600;
     /* gap: 40px; */
     
 }
-.redes div a box-icon,
-.nosotros p box-icon{
-    transform: scale(1.3);
+.redes--bg a {
+ padding: 10px 0;
 }
 
 @media only screen and (max-width: 750px){
