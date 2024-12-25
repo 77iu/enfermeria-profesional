@@ -48,6 +48,7 @@ p{
 .blue{
   color: rgb(7, 74, 167);
   text-align: center;
+
 }
 .black{
   
@@ -123,4 +124,13 @@ h1{
   text-align: center;
   padding:100px 30px;
   font-style: italic; 
+}
+/* =====================interaccion al pasar */
+
+.observer{
+  clip-path: polygon(0%0%,0%0%,0%100%,0%100%);
+  transition: 1.5s ease;
+}
+ .observer.active{
+  clip-path: polygon(0%0%,100%0%,100%100%,0%100%);
 }
