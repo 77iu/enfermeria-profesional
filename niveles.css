@@ -263,7 +263,8 @@ padding: 30px;
 }
 
 /* Mitad de la tarjeta con la imagen */
-.card img {
+.card img ,
+card-content img{
   width: 50%; /* Ocupa la mitad del ancho */
  aspect-ratio: 1/0.8;
   object-fit: cover; /* Asegura que la imagen se recorte bien */
